@@ -8,7 +8,8 @@ spring:
   
   sql:
     init:
-      dataLocations: classPath:/movie_service.sql  
+      dataLocations: classPath:/movie_service.sql
+      mode: always
   
   
   jpa:
