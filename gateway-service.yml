@@ -18,11 +18,11 @@ spring:
           enabled: true
           lower-case-service-id: true
       routes:
-        - id: animal-service-route
-          uri: lb://animal-service
+        - id: movie-service-route
+          uri: lb://movie-service
           predicates:
-            - Path=/animal/**
-        - id: species-service-route
-          uri: lb://species-service
+            - Path=/movies/**
+        - id: catalog-service-route
+          uri: lb://catalog-service
           predicates:
-            - Path=/species/**
+            - Path=/catalog/**
