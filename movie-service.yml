@@ -4,6 +4,7 @@ spring:
     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/digitalflix
     username: root
     password: root
+    initialization-mode: always
   
   sql:
     init:
