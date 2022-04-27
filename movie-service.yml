@@ -5,6 +5,11 @@ spring:
     username: root
     password: rootroot
   
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
+
   sql:
     init:
       dataLocations: classPath:/movie_service.sql
