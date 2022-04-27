@@ -3,13 +3,8 @@ spring:
     driverClassName: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/digitalflix
     username: root
-    password: rootroot
+    password: root
   
-  rabbitmq:
-    host: localhost
-    username: guest
-    password: guest
-
   sql:
     init:
       dataLocations: classPath:/movie_service.sql
