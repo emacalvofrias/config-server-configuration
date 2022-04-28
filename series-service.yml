@@ -3,6 +3,7 @@ spring:
     host: rabbitmq
     username: guest
     password: guest
+
   data:
     mongodb:
       uri: mongodb://mongodb:27017/series
