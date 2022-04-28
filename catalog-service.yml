@@ -1,7 +1,11 @@
-spring:  
+spring:
+  rabbitmq:
+    host: rabbitmq
+    username: guest
+    password: guest
   data:
     mongodb:
-      uri: mongodb://localhost:27017/catalog
+      uri: mongodb://mongodb:27017/catalog
 
 server:
     port: 8082
@@ -11,4 +15,10 @@ eureka:
     fetchRegistry: true
     registerWithEureka: true
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://service-registry:8761/eureka
+
+queue:
+  series:
+    name: series-queue
+  movie:
+    name: movie-queue
