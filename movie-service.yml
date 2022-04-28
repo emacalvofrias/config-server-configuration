@@ -4,7 +4,7 @@ spring:
     username: guest
     password: guest
   datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
+    driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://mysqldb:3306/digitalflix
     username: root
     password: root
