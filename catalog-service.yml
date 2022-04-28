@@ -1,20 +1,7 @@
 spring:  
-  datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/digitalflix
-    username: root
-    password: rootroot
-  
-  sql:
-    init:
-      dataLocations: classPath:/catalog_service.sql
-      mode: always
-  
-  
-  jpa:
-    defer-datasource-initialization: true
-    hibernate:
-      ddlAuto: create-drop
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/catalog
 
 server:
     port: 8082
